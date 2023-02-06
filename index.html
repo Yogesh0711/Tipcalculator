@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto:wght@900&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <center>
+  <h1 style="" id="splitter">SPLI<br>TTER</h1>
+  <div id="box">
+    <div id="white">
+    <p style="margin-top:-15px;">
+    <label name="bills" for="bill" class="sty">Bill</label><br><br>
+    <input type="number" value="" name="bill" id="bill" class="inputs" placeholder="$"/>
+    </p>
+    <p class="sty">Select Tip %</p>
+    <table>
+      <tr>
+        <td><button onclick="tipfive()" class="buttons">5%</button></td>
+        <td><button onclick="tipten()" class="buttons">10%</button></td>
+        <td><button onclick="tipfif()" class="buttons">15%</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="tip25()" class="buttons">25%</button></td>
+        <td><button onclick="tip50()" class="buttons">50%</button></td>
+        <td><input type="number" value="" name="custom" id="custom" class="buttons" placeholder="Custom" onkeyup="customs()"/></td>
+      </tr>
+    </table>
+    <br> 
+    <p>
+    <label name="peoples" for="peo" class="sty" >Number of People</label><br><br>
+    <input type="number" value="" name="people" id="peo" class="inputs" placeholder="1"/>
+    </p>
+    </div>
+    
+    <div id="green">
+      <p class="sty" id="tip">Tip amount<br><span class="pers" style="margin-left:-100px;">/Person</span></p>
+      <p class="sty" id="tot">Total<br><span class="pers">/Person</span></p>
+      <p class="sty"  id="ans1"></p>
+      <p class="sty"  id="ans2"></p>
+    <br>
+      <a href="https://tipcalculator.yogeshwarik.repl.co/"><button id="reset" class="buttons">Reset</button></a>
+    </div>
+  </div>
+  </center>
+
+  
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
